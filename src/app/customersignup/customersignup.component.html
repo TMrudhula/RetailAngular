@@ -1,0 +1,76 @@
+
+ <div class="card">
+    <div class="signup-container">
+      <h2>Signup</h2>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="Name">Name:</label>
+          <input id="Name" type="text" formControlName="Name" placeholder="Enter your Name">
+          <div *ngIf="form.get('Name')?.invalid && (form.get('Name')?.dirty || form.get('Name')?.touched)" class="error">
+            <div *ngIf="form.get('Name')?.errors?.['required']">Name is required</div>
+            <div *ngIf="form.get('Name')?.errors?.['minlength']">Name must be at least 3 characters</div>
+            <div *ngIf="form.get('Name')?.errors?.['maxlength']">Name cannot exceed 50 characters</div>
+          </div>
+        </div>
+     
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input id="Email" type="Email" formControlName="Email" placeholder="Enter your email">
+          <div *ngIf="form.get('Email')?.invalid && (form.get('Email')?.dirty || form.get('Email')?.touched)" class="error">
+            <div *ngIf="form.get('Email')?.errors?.['required']">Email is required</div>
+            <div *ngIf="form.get('Email')?.errors?.['email']">Invalid email format</div>
+          </div>
+        </div>
+     
+        <div class="form-group">
+          <label for="Password">Password:</label>
+          <input id="Password" type="password" formControlName="Password" placeholder="Enter your password">
+          <div *ngIf="form.get('Password')?.invalid && (form.get('Password')?.dirty || form.get('Password')?.touched)" class="error">
+            <div *ngIf="form.get('Password')?.errors?.['required']">Password is required</div>
+            <div *ngIf="form.get('Password')?.errors?.['pattern']">Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character</div>
+          </div>
+        </div>
+     
+        <div class="form-group">
+          <label for="Phone">Phone:</label>
+          <input id="Phone" type="tel" formControlName="Phone" placeholder="Enter your phone no.">
+          <div *ngIf="form.get('Phone')?.invalid && (form.get('Phone')?.dirty || form.get('Phone')?.touched)" class="error">
+            <div *ngIf="form.get('Phone')?.errors?.['required']">Phone number is required</div>
+            <div *ngIf="form.get('Phone')?.errors?.['pattern']">Phone number must be 10 digits</div>
+          </div>
+        </div>
+
+        
+
+
+        <div *ngIf="form.get('Street')?.invalid && (form.get('Street')?.dirty || form.get('Street')?.touched) ||
+            form.get('City')?.invalid && (form.get('City')?.dirty || form.get('City')?.touched) ||
+            form.get('State')?.invalid && (form.get('State')?.dirty || form.get('State')?.touched) ||
+            form.get('Zip')?.invalid && (form.get('Zip')?.dirty || form.get('Zip')?.touched)"
+     class="error">
+  <div *ngIf="form.get('Street')?.errors?.['required']">Street address is required</div>
+  <div *ngIf="form.get('City')?.errors?.['required']">City is required</div>
+  <div *ngIf="form.get('State')?.errors?.['required']">State is required</div>
+  <div *ngIf="form.get('Zip')?.errors?.['required']">Zip code is required</div>
+  <div *ngIf="form.get('Zip')?.errors?.['pattern']">Please enter a valid zip code</div>
+</div>
+       
+
+
+       
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    </div>
+    
+     
+
+
+
+
+
+
+
+
+  
+  

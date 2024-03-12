@@ -1,0 +1,536 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul{
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li{
+  display:inline-block;
+  margin-right: 20px;
+}
+
+a{
+  text-decoration: non;
+  color: #000;
+ text-size-adjust: 30px;
+  
+}
+
+p{
+  color: #000
+}
+
+.container{
+  max-width: 1300px;
+  margin: auto;
+
+}
+
+.container {
+  padding: 10px 20px;
+  background-color: #0f5296; /* Add background color as needed */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px; /* Adjust margin as needed */
+  
+}
+
+#MenuItems {
+  display: flex;
+  list-style-type: none;
+  margin-left: auto;
+}
+
+#MenuItems button {
+  margin-left: 50px;
+  margin-right: 50px; /* Adjust margin as needed */
+}
+
+.dropdown1,
+.dropdown2 {
+  margin-left: 30px; /* Adjust margin as needed */
+ 
+}
+
+
+.btn-primary{
+  background-color: #960f52;
+  margin-left: 30px;
+}
+
+
+
+
+
+
+
+/* slider*/
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
+.carousel-inner{
+    margin-top: 72px;
+}
+.carousel-image {
+    height: 300px; /* Adjust the height as needed */
+    object-fit: cover; /* This property ensures that the image covers the entire container */
+  }
+
+
+
+/* drop down*/
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: #960f52;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:#960f52;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #960f52;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color:#960f52;
+}
+
+/* Show the dropdown content when the dropdown button is clicked */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* drop down end*/
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 125px;
+}
+
+.search1 {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+#MenuItems {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+#MenuItems li {
+  margin-right: 20px; /* Adjust as needed */
+}
+
+#MenuItems li:last-child {
+  margin-right: 0;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown1:hover .dropdown-content,
+.dropdown2:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .logo {
+      margin-right: 0; /* Remove margin for logo */
+  }
+
+  nav ul {
+      display: none; /* Hide navigation links */
+  }
+
+  .menu-icon {
+      display: inline; /* Display menu icon */
+      cursor: pointer; /* Set cursor to pointer */
+  }
+
+  /* Show navigation links when menu icon is clicked */
+  nav ul.show {
+      display: block;
+  }
+
+  /* Adjust spacing for navigation links */
+  nav ul.show li {
+      display: block;
+      margin-bottom: 10px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .navbar ul li {
+      display: block;
+      text-align: center;
+  }
+
+  .navbar ul li a {
+      display: block;
+      padding: 10px;
+  }
+}
+
+/* Header */
+.header {
+    background-color: #f8f8f8;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    padding: 0 15px;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 60px;
+}
+
+.col-2 p {
+    color: #666;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #563434;
+}
+
+/* Categories */
+.categories {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.categories img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Featured Products */
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    
+}
+
+.col-4 img {
+    width: 100%;
+    height: 75%;
+
+}
+
+h4{
+  color: #555;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.rating {
+    color: #ff523b;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Offer */
+.offer {
+    background-color: #fff5e6;
+    margin-top: 50px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.offer h1 {
+    color: #555;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.offer p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.offer small {
+    color: #999;
+}
+
+.offer .btn {
+    background-color: #ff523b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.offer .btn:hover {
+    background-color: #563434;
+}
+
+/* Brands */
+.brands {
+    margin-top: 50px;
+}
+
+.brands img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #000;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    flex-basis: 25%;
+    text-align: left;
+    background-color: #000;
+}
+
+.footer-col-1 img {
+    width: 80px;
+    margin-bottom: 20px;
+    background-color: #000;
+
+}
+
+.footer-col-2 p {
+    font-size: 14px;
+    background-color: #000;
+}
+
+.footer-col-3 ul {
+    list-style-type: none;
+    background-color: #000;
+}
+
+.footer-col-3 ul li {
+    margin-bottom: 10px;
+    background-color: #000;
+}
+
+.footer-col-4 ul {
+    list-style-type: none;
+    background-color: #000;
+}
+
+.footer-col-4 ul li {
+    margin-bottom: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        margin-top: 20px;
+        display: none;
+    }
+
+    .navbar ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-2 {
+        padding: 0 10px;
+    }
+
+    .col-2 h1 {
+        font-size: 36px;
+        line-height: 40px;
+        margin-top: 40px;
+    }
+
+    .col-2 p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .categories img {
+        margin-top: 10px;
+    }
+
+    .col-4 img {
+        margin-top: 10px;
+    }
+
+    .offer h1 {
+        font-size: 30px;
+    }
+
+    .footer-col-1 img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .footer-col-2 p {
+        font-size: 12px;
+    }
+
+    .footer-col-3 ul li, .footer-col-4 ul li {
+        font-size: 14px;
+    }
+}
+ 
+  
+
+ 

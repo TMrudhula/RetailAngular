@@ -1,0 +1,51 @@
+
+   
+
+<div class="background-container">
+  <!--<img src="../../assets/images/stock-video-shopping-carts-in-circle.mp4" alt="Background Image">-->
+  <!--<video autoplay loop muted playsinline class="background-video">
+    <source src="../../assets/images/stock-video-shopping-carts-in-circle.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>-->
+  
+<div class="overlay-text container mt-4">
+  <div class="row justify-content-center">
+    <div class="col-md-5">
+<div class="card bg-light mb-10" style="max-width: 80rem;">
+  <h5 class="card-header bg-primary text-white">Customer Login</h5>
+  <div class="card-body">
+
+<div class="login-container">
+    
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="Email">Email<font color="red"><b>*</b></font>:</label>
+        <input id="Email" type="email" formControlName="Email" placeholder="Enter your email">
+        <div *ngIf="form.get('Email')?.invalid && (form.get('Email')?.dirty || form.get('Email')?.touched)" class="error">
+          <div *ngIf="form.get('Email')?.errors?.['required']">Email is required</div>
+          <div *ngIf="form.get('Email')?.errors?.['email']">Invalid email format</div>
+        </div>
+      </div>
+ 
+
+   
+      <div class="form-group">
+        <label for="Password">Password<font color="red"><b>*</b></font>:</label>
+        <input id="Password" type="password" formControlName="Password" placeholder="Enter your password">
+        <div *ngIf="form.get('Password')?.invalid && (form.get('Password')?.dirty || form.get('Password')?.touched)" class="error">
+          <div *ngIf="form.get('Password')?.errors?.['required']">Password is required</div>
+        </div>
+      </div>
+   
+      <button type="submit">Login</button>
+    </form>
+  </div>
+  </div>
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+
+ 
+ 

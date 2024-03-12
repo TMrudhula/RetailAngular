@@ -1,0 +1,26 @@
+<!-- <div class="container">
+    <p>Payment Amount: {{ paymentAmount / 100 }} USD</p>
+    < Payment method selection -->
+    <!-- <div>
+        <input type="radio" id="onlinePayment" name="paymentMethod" value="onlinePayment"
+            *ngModel="selectedPaymentMethod">
+        <a href="onlinePayment" class="btn btn-primary">Online Payment</a>
+    </div>
+    <br> -->
+    <!-- <div>
+        <input type="radio" id="cod" name="paymentMethod" value="cod" *ngModel="selectedPaymentMethod">
+        <a href="cod" class="btn btn-primary">Cash on Delivery</a>
+    </div>
+    <br>
+    <br>
+    <a href="processPayment()" class="btn btn-primary">Place Order</a>
+</div> --> 
+<div>
+    <h2>Select Payment Method</h2>
+    <label>
+        <input type="radio" name="paymentMethod" (change)="onSelectPaymentMethod('COD')">Cash on Delivery(COD)
+        <input type="radio" name="paymentMethod" (change)="onSelectPaymentMethod('CREDIT CARD')">CREDIT CARD
+        <input type="radio" name="paymentMethod" (change)="onSelectPaymentMethod('DEBIT CARD')">DEBIT CARD &nbsp;
+    </label>
+    <a href ="processPayment">Process Payment</a>
+</div>

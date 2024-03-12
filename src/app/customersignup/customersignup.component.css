@@ -1,0 +1,28 @@
+/* customersignup.component.css */
+
+/* Style for form container */
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+/* Style for form inputs */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for error messages */
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}

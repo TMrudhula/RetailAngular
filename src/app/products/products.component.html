@@ -1,0 +1,99 @@
+<div class="container">
+          <div class="navbar">
+              <div class="logo">
+                <img src="../../assets/images/logo.png" width="125px">
+              </div>
+                <nav>
+                <ul id="MenuItems">
+                  
+
+                  <a  class ="btn btn-primary" href="/homepage">Home</a>
+                   
+                   <div class="dropdown1">
+                    <button class="dropbtn">Fashion</button>
+                    <div class="dropdown-content">
+                      <a href="/products">Men</a>
+                      <a href="/women">Women</a>
+                      
+                    </div>
+                    </div>
+
+                  <div class="dropdown2">
+                    <button class="dropbtn">Electronics</button>
+                    <div class="dropdown-content">
+                      <a href="/gadgets">Gadgets</a>
+                      <a href="appliance">Appliances</a>
+                      
+                    </div>
+                  </div>
+
+                  <div class="dropdown2">
+                    <button class="dropbtn">Accounts</button>
+                    <div class="dropdown-content">
+                      <a href="/customerlogin">Login</a>
+                      <a href="/customersignup">SignUp</a>
+                    </div>
+                  </div>
+
+                
+                  <button  class ="btn-primary" routerLink="/cart">
+                    <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+                    <div style="font-size: 10px;" class="badge bg-maroon">{{0}}</div>
+                  </button>
+
+                </ul>
+            </nav>
+          </div>    
+     </div>
+  
+
+
+
+<div class="card-top container-fluid">
+    <div class="container2 d-flex">
+        <div class="item">
+            <a>
+                <img src="../../assets/All products.webp" alt="">
+                <h6>All products</h6>
+            </a>
+ 
+        </div>
+        <div class="item">
+            <a (click)="getProductsBySubCategoryName('Topwear')">
+                <img src="../../assets/Electronics.png" alt="">
+                <h6>Topwear</h6>
+            </a>
+        </div>
+        
+        <!-- <div class="item">
+            <a (click)="filter('')">
+                <img style="width: 62px; margin-top: 5px"  alt="">
+                <h6>Jeans</h6>
+            </a>
+ 
+        </div>
+       
+        <div class="item">
+            <a (click)="filter('')">
+                <img style="width: 62px; margin-top: 5px"  alt="">
+                <h6>Watches</h6>
+            </a> -->
+        
+    <!-- </div> -->
+</div>
+
+
+
+ <div class="container3">
+    <div class = "row">
+        <ng-container *ngFor="let item of products">
+            <div class="card col-md-3">
+                <img src="{{item.image}}" alt="">
+                <h5 style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">{{item.title}}</h5>
+                <p style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width: 100ch;">{{item.description}}</p>
+                <p><strong>Price:</strong>${{item.price}}</p>
+              <!----  <button class="btn btn-primary" (click)="addtocart(item)">Add to cart</button>-->
+            </div>
+        </ng-container>
+    </div>
+</div> 

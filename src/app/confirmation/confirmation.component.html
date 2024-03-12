@@ -1,0 +1,8 @@
+<div *ngIf="isOrderPlaced()">
+    <h2>Your Order is Placed!</h2>
+    <p>Thank you for shopping with us.</p>
+  </div>
+  <div *ngIf="!isOrderPlaced()">
+    <h2>Error Processing Order</h2>
+    <p>There was an error processing your order. Please try again.</p>
+  </div>

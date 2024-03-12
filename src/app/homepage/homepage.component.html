@@ -1,0 +1,284 @@
+
+<!-- homepage.component.html -->
+
+<div class="container">
+  <div class="navbar">
+      <div class="logo">
+          <img src="../../assets/images/logo.png" width="125px">
+      </div>
+
+      <nav>
+          <ul id="MenuItems">
+              <li class="dropdown">
+                  <button class="dropbtn">Fashion</button>
+                  <div class="dropdown-content">
+                      <a routerLink="/products/men">Men</a>
+                      <a routerLink="/products/women">Women</a>
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <button class="dropbtn">Electronics</button>
+                  <div class="dropdown-content">
+                      <a routerLink="/products/gadgets">Gadgets</a>
+                      <a routerLink="/products/appliance">Appliances</a>
+                  </div>
+              </li>
+              <li class="dropdown">
+                  <button class="dropbtn">Accounts</button>
+                  <div class="dropdown-content">
+                      <a routerLink="/customerlogin">Login</a>
+                      <a routerLink="/customersignup">SignUp</a>
+                  </div>
+              </li>
+              <li>
+                  <a class="btn btn-primary" routerLink="/cart">
+                      <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+                      <div style="font-size: 10px;" class="badge bg-maroon"></div>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+  </div>
+  </div>
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/images/slider1 (1).png" class="d-block w-100 carousel-image" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../assets/images/slider1 (2).png" class="d-block w-100 carousel-image" alt="...">
+      </div>
+  
+      <div class="carousel-item">
+        <img src="../../assets/images/slider1 (3).png" class="d-block w-100 carousel-image" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  
+  </div>
+
+  <!-- Featured products -->
+  <div class="small-container">
+      <!-- Featured products content -->
+      <h2 class="title">Featured Product</h2>
+    
+      <div class="row">
+       <div class="col-4">
+           <a href="/gadgets"><img src="../../assets/images/Acer Nitro Laptop.jpg"> <h6>View More</h6></a>
+           <h4>Acer Nitro Laptop</h4>
+          <p>₹79,800</p>
+          
+          </div>
+          <div class="col-4">
+              <img src="../../assets/images/Cotton Lace Blouse.jpg">
+              <h4>Cotton Lace Blouse</h4>
+              
+             <p>₹1,599</p>
+             </div>
+             <div class="col-4">
+              <img src="../../assets/images/DNK Red Shoes.jpg">
+              <h4>DNK Red Shoes</h4>
+              
+             <p>₹2,999</p>
+             </div>
+             <div class="col-4">
+              <img src="../../assets/images/Redmi 13 C.jpg">
+              <h4>Redmi 13 C</h4>
+              
+             <p>₹29,990</p>
+             </div>
+  </div>
+
+  <!-- Latest products -->
+  <div class="small-container">
+      <!-- Latest products content -->
+      <h2 class="title">Latest Products</h2>
+<div class="row">
+    <div class="col-4">
+        <img src="../../assets/images/Noise Buds N1 in-Ear.jpg">
+        <h4>Noise Buds N1 in-Ear</h4>
+        <div class="rating">
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star"></i>
+           <i class="fa fa-star-o"></i>
+        </div>
+       <p>₹1,599</p>
+       </div>
+       <div class="col-4">
+           <img src="../../assets/images/Lymio Dress.jpg">
+           <h4>Lymio Dress</h4>
+           <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+           </div>
+          <p>₹999</p>
+          </div>
+          <div class="col-4">
+           <img src="../../assets/images/Square Geometric Pendant for Men.jpg">
+           <h4>Square Geometric Pendant for Men</h4>
+           <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+           </div>
+          <p>₹399</p>
+          </div>
+          <div class="col-4">
+           <img src="../../assets/images/SriKi Women's Anarkali.jpg">
+           <h4>SriKi Women's Anarkali</h4>
+           <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+           </div>
+          <p>₹899</p>
+          </div>
+          <div class="col-4">
+            <img src="../../assets/images/Twist Go Smartwatch.jpg">
+            <h4>Twist Go Smartwatch</h4>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+            </div>
+           <p>₹2,500</p>
+           </div>
+           <div class="col-4">
+            <img src="../../assets/images/Zebronics Mouse.jpg">
+            <h4>Zebronics Mouse</h4>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+            </div>
+           <p>₹499</p>
+           </div>
+           <div class="col-4">
+            <img src="../../assets/images/Valerie Women Wallet.jpg">
+            <h4>Valerie Women Wallet</h4>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+            </div>
+           <p>₹599</p>
+           </div>
+           <div class="col-4">
+            <img src="../../assets/images/Leriya T Shirt.jpg">
+            <h4>Leriya T Shirt</h4>
+            <div class="rating">
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star-half-o"></i>
+            </div>            
+           <p>₹999</p>
+           </div>
+
+</div>
+ </div>
+
+  </div>
+
+  <!-- Offer section -->
+  <div class="offer">
+      <!-- Offer content -->
+     
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="../../assets/images/Picture1.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on RedStore</p>
+                    <h1>Smart Band 4</h1>
+                    <small>The mi Smart Band 4 Feature a 39.9% larger
+                        (than mi band 3) amoled color full_touch display width
+                        adjustable brightness, so everything is clear as can be.
+                    </small>
+                    <a href="" class="btn">Buy Now &#8594;</a>
+                </div>
+            </div>
+        </div>
+    
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+      <!-- Footer content -->
+      <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+               
+            </div>
+            <div class="footer-col-2">
+              <div class="app-logo">
+                <img src="../../assets/images/PLAY STORE.png">
+                <img src="../../assets/images/APP Ssore.png">
+            </div>
+               
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">Copyright 2024</p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+   
